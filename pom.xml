@@ -18,6 +18,7 @@
   </properties>
   <dependencyManagement>
     <dependencies>
+      
       <dependency>
         <groupId>${quarkus.platform.group-id}</groupId>
         <artifactId>${quarkus.platform.artifact-id}</artifactId>
@@ -42,6 +43,30 @@
       <artifactId>quarkus-ngrok</artifactId>
       <version>1.5.1</version>
     </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.langchain4j</groupId>
+      <artifactId>quarkus-langchain4j-openai</artifactId>
+      <version>0.14.1</version>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.mailpit</groupId>
+      <artifactId>quarkus-mailpit</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>io.quarkiverse.web-bundler</groupId>
+      <artifactId>quarkus-web-bundler</artifactId>
+      <!-- using 999-snapshot to get livereload -->
+      <version>999-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+	    <groupId>org.mvnpm</groupId>
+	    <artifactId>htmx.org</artifactId>
+	    <version>1.9.12</version>
+	    <scope>provided</scope>
+    </dependency>
+    
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
